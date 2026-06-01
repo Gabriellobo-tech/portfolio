@@ -53,7 +53,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
 // ===== TYPED TEXT EFFECT =====
 const texts = [
-  'Estudante de Engenharia de Software',
+  'Engenheiro de Software',
   'Desenvolvedor em Formação',
   'Apaixonado por Tecnologia',
   'Futuro Dev Full Stack'
