@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- =============================================
+       Gabriel Sousa Lobo — Portfolio Profissional
+       Desenvolvido com HTML, CSS e JavaScript
+       Otimizado para GitHub Pages
+  ================================================= -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Gabriel Sousa Lobo | Engenharia de Software</title>
+  <meta name="description" content="Portfólio de Gabriel Sousa Lobo, estudante de Engenharia de Software na UCB e desenvolvedor em formação. Especializado em C#, React e desenvolvimento web." />
+  <meta name="keywords" content="Gabriel Sousa Lobo, Engenharia de Software, Desenvolvedor, C#, React, Flutter, UCB, Brasília" />
+  <meta name="author" content="Gabriel Sousa Lobo" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gabriel Sousa Lobo | Engenharia de Software" />
+  <meta property="og:description" content="Estudante de Engenharia de Software e desenvolvedor em formação." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">GSL<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#habilidades" class="nav-link">Skills</a></li>
+        <li><a href="#formacao" class="nav-link">Formação</a></li>
+        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="#contato" class="nav-link cta-nav">Contato</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Disponível para oportunidades
+      </div>
+      <div class="hero-avatar reveal reveal-delay-1">
+        <div class="avatar-ring"></div>
+        <div class="avatar-placeholder">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+      <h1 class="hero-name reveal reveal-delay-2">
+        Gabriel<br /><span class="name-accent">Sousa Lobo</span>
+      </h1>
+      <p class="hero-role reveal reveal-delay-3">
+        <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-phrase reveal reveal-delay-4">
+        "Transformando aprendizado em soluções através da tecnologia."
+      </p>
+      <div class="hero-actions reveal reveal-delay-5">
+        <a href="#habilidades" class="btn btn-primary">
+          <i class="fa-solid fa-code"></i> Ver Habilidades
+        </a>
+        <a href="#contato" class="btn btn-outline">
+          <i class="fa-solid fa-envelope"></i> Entrar em Contato
+        </a>
+      </div>
+      <div class="hero-scroll reveal reveal-delay-5">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section class="section sobre" id="sobre">
+    <div class="container">
+      <div class="section-label reveal">
+        <span>01</span> Sobre Mim
+      </div>
+      <div class="sobre-grid">
+        <div class="sobre-text reveal">
+          <h2 class="section-title">Quem sou <span class="accent">eu?</span></h2>
+          <p>Sou <strong>Gabriel Sousa Lobo</strong>, estudante de Engenharia de Software na <strong>Universidade Católica de Brasília</strong> com previsão de conclusão em 2029. Apaixonado por tecnologia e desenvolvimento de software desde cedo, encontrei na programação uma forma de transformar raciocínio lógico em soluções reais.</p>
+          <p>Tenho foco em desenvolvimento de aplicações, com experiência em <strong>C#</strong>, lógica de programação e algoritmos. Estou expandindo meus conhecimentos para o ecossistema web com <strong>React</strong> e mobile com <strong>Flutter</strong>, sempre buscando aplicar o que aprendo em projetos práticos.</p>
+          <p>Meu objetivo é crescer como desenvolvedor, contribuindo em equipes colaborativas e construindo produtos que gerem impacto real. Acredito que consistência, curiosidade e comprometimento são os pilares do sucesso na área de tecnologia.</p>
+          <div class="sobre-stats">
+            <div class="stat">
+              <span class="stat-number">8+</span>
+              <span class="stat-label">Tecnologias</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Cursos Ativos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2029</span>
+              <span class="stat-label">Formação</span>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-details reveal reveal-delay-2">
+          <div class="detail-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <strong>Engenharia de Software</strong>
+              <span>Universidade Católica de Brasília</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Brasília, DF</strong>
+              <span>Brasil</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <i class="fa-solid fa-language"></i>
+            <div>
+              <strong>Inglês &amp; Espanhol</strong>
+              <span>Nível Básico (A2)</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <i class="fa-solid fa-code-branch"></i>
+            <div>
+              <strong>Open to Work</strong>
+              <span>Estágio / Trabalho</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HABILIDADES ===================== -->
+  <section class="section habilidades" id="habilidades">
+    <div class="container">
+      <div class="section-label reveal">
+        <span>02</span> Habilidades
+      </div>
+      <h2 class="section-title reveal">Stack <span class="accent">Técnica</span></h2>
+      <p class="section-subtitle reveal">Ferramentas e tecnologias que domino e estou aprendendo</p>
+
+      <div class="skills-grid">
+        <!-- Skill Card -->
+        <div class="skill-card reveal" data-level="70">
+          <div class="skill-icon cs"><i class="fa-solid fa-c"></i></div>
+          <h3>C#</h3>
+          <p>Programação orientada a objetos, algoritmos e lógica</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
+          <span class="skill-tag">Intermediário</span>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-1" data-level="40">
+          <div class="skill-icon react"><i class="fa-brands fa-react"></i></div>
+          <h3>React</h3>
+          <p>Componentes, hooks e fundamentos do ecossistema</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="40"></div></div>
+          <span class="skill-tag">Básico</span>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-2" data-level="30">
+          <div class="skill-icon flutter"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3>Flutter</h3>
+          <p>Desenvolvimento mobile multiplataforma em aprendizado</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="30"></div></div>
+          <span class="skill-tag">Aprendendo</span>
+        </div>
+
+        <div class="skill-card reveal" data-level="75">
+          <div class="skill-icon git"><i class="fa-brands fa-git-alt"></i></div>
+          <h3>Git</h3>
+          <p>Controle de versão, branches e fluxo de trabalho</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+          <span class="skill-tag">Bom</span>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-1" data-level="75">
+          <div class="skill-icon github"><i class="fa-brands fa-github"></i></div>
+          <h3>GitHub</h3>
+          <p>Repositórios, pull requests e colaboração</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+          <span class="skill-tag">Bom</span>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-2" data-level="50">
+          <div class="skill-icon web"><i class="fa-solid fa-globe"></i></div>
+          <h3>Dev Web</h3>
+          <p>HTML, CSS e fundamentos de desenvolvimento web</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="50"></div></div>
+          <span class="skill-tag">Intermediário</span>
+        </div>
+
+        <div class="skill-card reveal" data-level="80">
+          <div class="skill-icon algo"><i class="fa-solid fa-diagram-project"></i></div>
+          <h3>Algoritmos</h3>
+          <p>Estrutura de dados, complexidade e resolução de problemas</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+          <span class="skill-tag">Bom</span>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-1" data-level="80">
+          <div class="skill-icon logic"><i class="fa-solid fa-brain"></i></div>
+          <h3>Lógica de Prog.</h3>
+          <p>Raciocínio computacional e pensamento algorítmico</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+          <span class="skill-tag">Bom</span>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="soft-skills reveal">
+        <h3 class="soft-title">Competências Profissionais</h3>
+        <div class="soft-grid">
+          <div class="soft-card"><i class="fa-solid fa-comments"></i><span>Comunicação</span></div>
+          <div class="soft-card"><i class="fa-solid fa-people-group"></i><span>Trabalho em Equipe</span></div>
+          <div class="soft-card"><i class="fa-solid fa-list-check"></i><span>Organização</span></div>
+          <div class="soft-card"><i class="fa-solid fa-puzzle-piece"></i><span>Resolução de Problemas</span></div>
+          <div class="soft-card"><i class="fa-solid fa-bolt"></i><span>Aprendizado Rápido</span></div>
+          <div class="soft-card"><i class="fa-solid fa-rocket"></i><span>Proatividade</span></div>
+          <div class="soft-card"><i class="fa-solid fa-medal"></i><span>Comprometimento</span></div>
+          <div class="soft-card"><i class="fa-solid fa-lightbulb"></i><span>Raciocínio Lógico</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FORMAÇÃO ===================== -->
+  <section class="section formacao" id="formacao">
+    <div class="container">
+      <div class="section-label reveal">
+        <span>03</span> Formação
+      </div>
+      <h2 class="section-title reveal">Educação &amp; <span class="accent">Cursos</span></h2>
+
+      <div class="timeline">
+        <!-- Item 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-year">2024 — 2029</span>
+              <span class="timeline-status status-active">Em andamento</span>
+            </div>
+            <h3>Bacharelado em Engenharia de Software</h3>
+            <p class="timeline-inst"><i class="fa-solid fa-university"></i> Universidade Católica de Brasília — UCB</p>
+            <p>Formação completa em desenvolvimento de software, algoritmos, estruturas de dados, engenharia de requisitos, arquitetura de sistemas e metodologias ágeis.</p>
+            <div class="timeline-tags">
+              <span>Algoritmos</span><span>POO</span><span>Engenharia de Requisitos</span><span>Metodologias Ágeis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="timeline-dot done"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-year">2024</span>
+              <span class="timeline-status status-done">Concluído</span>
+            </div>
+            <h3>Algoritmos e Lógica de Programação</h3>
+            <p class="timeline-inst"><i class="fa-brands fa-udemy"></i> Udemy — Nélio Alves</p>
+            <p>Fundamentos de algoritmos, fluxogramas, pseudocódigo e implementação de soluções em linguagem de programação.</p>
+            <div class="timeline-tags">
+              <span>Algoritmos</span><span>Lógica</span><span>Pseudocódigo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item reveal reveal-delay-2">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-year">2024 — atual</span>
+              <span class="timeline-status status-active">Em andamento</span>
+            </div>
+            <h3>C# Completo: POO + Projetos</h3>
+            <p class="timeline-inst"><i class="fa-brands fa-udemy"></i> Udemy</p>
+            <p>Programação orientada a objetos em C#, herança, polimorfismo, interfaces, coleções e desenvolvimento de projetos práticos.</p>
+            <div class="timeline-tags">
+              <span>C#</span><span>POO</span><span>Projetos Práticos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 - Futuro -->
+        <div class="timeline-item reveal reveal-delay-3">
+          <div class="timeline-dot future"></div>
+          <div class="timeline-content future-content">
+            <div class="timeline-header">
+              <span class="timeline-year">Em breve</span>
+              <span class="timeline-status status-future">Planejado</span>
+            </div>
+            <h3>Certificações &amp; Especializações</h3>
+            <p class="timeline-inst"><i class="fa-solid fa-road"></i> Próximos Passos</p>
+            <p>Certificações em desenvolvimento web, cloud computing e frameworks modernos para consolidar o perfil profissional.</p>
+            <div class="timeline-tags">
+              <span>React</span><span>Flutter</span><span>Cloud</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIÊNCIA ACADÊMICA ===================== -->
+  <section class="section experiencia" id="experiencia">
+    <div class="container">
+      <div class="section-label reveal">
+        <span>04</span> Experiência
+      </div>
+      <h2 class="section-title reveal">Experiência <span class="accent">Acadêmica</span></h2>
+
+      <div class="exp-card reveal">
+        <div class="exp-icon">
+          <i class="fa-solid fa-globe-americas"></i>
+        </div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <h3>SESCMUN — Simulação da ONU</h3>
+            <span class="exp-tag">Experiência Acadêmica</span>
+          </div>
+          <p class="exp-desc">Participação em simulação das Nações Unidas, representando países em debates internacionais sobre temas globais. Experiência enriquecedora que desenvolveu habilidades essenciais para o mercado de trabalho.</p>
+          <div class="exp-skills">
+            <div class="exp-skill"><i class="fa-solid fa-check"></i> Comunicação e Oratória</div>
+            <div class="exp-skill"><i class="fa-solid fa-check"></i> Argumentação e Debate</div>
+            <div class="exp-skill"><i class="fa-solid fa-check"></i> Resolução de Problemas</div>
+            <div class="exp-skill"><i class="fa-solid fa-check"></i> Pensamento Crítico</div>
+            <div class="exp-skill"><i class="fa-solid fa-check"></i> Trabalho em Equipe</div>
+            <div class="exp-skill"><i class="fa-solid fa-check"></i> Negociação</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJETOS ===================== -->
+  <section class="section projetos" id="projetos">
+    <div class="container">
+      <div class="section-label reveal">
+        <span>05</span> Projetos
+      </div>
+      <h2 class="section-title reveal">Meus <span class="accent">Projetos</span></h2>
+      <p class="section-subtitle reveal">Espaço preparado para futuros projetos. Em construção!</p>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <div class="project-img">
+            <div class="project-img-placeholder p1">
+              <i class="fa-solid fa-terminal"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" title="Em breve"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Projeto C# Console</h3>
+            <p>Aplicação console desenvolvida em C# com programação orientada a objetos, demonstrando conceitos de herança e polimorfismo.</p>
+            <div class="project-tech">
+              <span>C#</span><span>.NET</span><span>POO</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-img">
+            <div class="project-img-placeholder p2">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" title="Em breve"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Landing Page Web</h3>
+            <p>Página web responsiva com HTML, CSS e JavaScript, focada em boas práticas de desenvolvimento front-end.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-img">
+            <div class="project-img-placeholder p3">
+              <i class="fa-brands fa-react"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" title="Em breve"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>App React</h3>
+            <p>Aplicação React com componentes funcionais, hooks e consumo de API, explorando o ecossistema moderno do front-end.</p>
+            <div class="project-tech">
+              <span>React</span><span>JavaScript</span><span>API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-img">
+            <div class="project-img-placeholder p4">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" title="Em breve"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>App Flutter</h3>
+            <p>Aplicação mobile desenvolvida com Flutter, explorando widgets, navegação e o desenvolvimento multiplataforma.</p>
+            <div class="project-tech">
+              <span>Flutter</span><span>Dart</span><span>Mobile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-cta reveal">
+        <a href="https://github.com/" target="_blank" class="btn btn-outline">
+          <i class="fa-brands fa-github"></i> Ver mais no GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO ===================== -->
+  <section class="section contato" id="contato">
+    <div class="container">
+      <div class="section-label reveal">
+        <span>06</span> Contato
+      </div>
+      <h2 class="section-title reveal">Vamos <span class="accent">conversar?</span></h2>
+      <p class="section-subtitle reveal">Aberto a oportunidades de emprego, projetos e colaborações.</p>
+
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <a href="mailto:gabriel@email.com" class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <strong>E-mail</strong>
+              <span>gabriellobo08dev@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:+55619984505665" class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <strong>Telefone</strong>
+              <span>(61) 9 98450-5665</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/" target="_blank" class="contact-card">
+            <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+            <div>
+              <strong>LinkedIn</strong>
+              <span>https://www.linkedin.com/in/gabriellobodev08/</span>
+            </div>
+          </a>
+          <a href="https://github.com/" target="_blank" class="contact-card">
+            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <strong>GitHub</strong>
+              <span>https://github.com/Gabriellobo-tech</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal reveal-delay-2">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" placeholder="Seu nome completo" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Assunto</label>
+              <input type="text" id="subject" name="subject" placeholder="Proposta / Dúvida / Colaboração" />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">
+              <i class="fa-solid fa-paper-plane"></i> Enviar Mensagem
+            </button>
+            <p class="form-note" id="formMsg"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">GSL<span class="dot">.</span></a>
+          <p>Estudante de Engenharia de Software e desenvolvedor em formação. Brasília, DF — Brasil.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Redes Sociais</h4>
+          <div class="social-links">
+            <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:gabriel@email.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Gabriel Sousa Lobo. Todos os direitos reservados.</p>
+        <p>Desenvolvido com <i class="fa-solid fa-heart accent"></i> por Gabriel Sousa Lobo</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
